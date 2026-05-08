@@ -14,10 +14,22 @@ The following environment variables must be exported before running:
 
 ### Example export
 
+Add the following exports to your shell config file and restart your terminal (or run `source <file>`).
+
+**macOS** — add to `~/.zshrc` (default shell) or `~/.bash_profile` if using bash:
+
 ```bash
-export PKI_CERT=/etc/pki/tls/certs/client.crt
-export PKI_KEY=/etc/pki/tls/private/client.key
-export PKI_CA=/etc/pki/ca-trust/source/anchors/ca.crt
+export PKI_CERT=/path/to/client.crt
+export PKI_KEY=/path/to/client.key
+export PKI_CA=/path/to/ca.crt
+```
+
+**Linux** — add to `~/.bashrc` (bash) or `~/.zshrc` (zsh):
+
+```bash
+export PKI_CERT=/path/to/client.crt
+export PKI_KEY=/path/to/client.key
+export PKI_CA=/path/to/ca.crt
 ```
 
 ## Usage
